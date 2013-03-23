@@ -19,13 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.members.brokering;
 
-import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to accept a broker commission contract
  * @author Jefferson Magno
  */
-public class AcceptBrokerCommissionContractForm extends ActionForm {
+public class AcceptBrokerCommissionContractForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = -4326884548930433622L;
 
