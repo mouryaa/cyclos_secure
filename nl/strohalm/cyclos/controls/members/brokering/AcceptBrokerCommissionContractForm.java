@@ -19,7 +19,7 @@
  */
 package nl.strohalm.cyclos.controls.members.brokering;
 
-import org.apache.struts.action.ValidatorActionForm;////SDESFIX
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to accept a broker commission contract
