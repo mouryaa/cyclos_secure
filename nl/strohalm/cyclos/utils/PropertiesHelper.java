@@ -108,12 +108,12 @@ public class PropertiesHelper {
      * 
      * This is an unnecessary entry point into the application
      * So i commented it out.
-     * 
-    public static void main(final String[] args) {
-        final ResourceBundle bundle = readBundle("nl.strohalm.cyclos.setup.CyclosSetup", new Locale("pt", "BR", "RS"));
-        System.out.println(bundle);
-    }
      */
+    //public static void main(final String[] args) {
+    //    final ResourceBundle bundle = readBundle("nl.strohalm.cyclos.setup.CyclosSetup", new Locale("pt", "BR", "RS"));
+    //    System.out.println(bundle);
+    //}
+     
 
     /**
      * Reads a resource bundle from a properties file encoded as utf-8
