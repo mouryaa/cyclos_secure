@@ -19,13 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.members.brokering;
 
-import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to cancel a broker commission contract
  * @author Jefferson Magno
  */
-public class CancelBrokerCommissionContractForm extends ActionForm {
+public class CancelBrokerCommissionContractForm extends ValidatorActionForm {//SDESFIX
 
     private static final long serialVersionUID = -4326884548930433622L;
 

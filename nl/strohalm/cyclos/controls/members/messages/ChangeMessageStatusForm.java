@@ -19,13 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.members.messages;
 
-import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to change the status for a message list
  * @author luis
  */
-public class ChangeMessageStatusForm extends ActionForm {
+public class ChangeMessageStatusForm extends ValidatorActionForm {//SDESFIX
 
     private static final long serialVersionUID = -1653146495451062395L;
     private Long[]            messageId;

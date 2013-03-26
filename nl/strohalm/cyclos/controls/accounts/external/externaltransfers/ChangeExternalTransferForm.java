@@ -19,13 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.accounts.external.externaltransfers;
 
-import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to change the status of external transfers
  * @author Jefferson Magno
  */
-public class ChangeExternalTransferForm extends ActionForm {
+public class ChangeExternalTransferForm extends ValidatorActionForm {//SDESFIX
 
     private static final long serialVersionUID = -3059103570368807370L;
     private long              transferImportId;

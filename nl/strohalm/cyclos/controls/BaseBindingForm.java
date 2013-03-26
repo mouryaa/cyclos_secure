@@ -22,13 +22,12 @@ package nl.strohalm.cyclos.controls;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.struts.action.ActionForm;
-
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 /**
  * Base classes for forms that use a databinder
  * @author luis
  */
-public abstract class BaseBindingForm extends ActionForm {
+public abstract class BaseBindingForm extends ValidatorActionForm {//SDESFIX
 
     private static final long     serialVersionUID = 2325049157565387768L;
     protected Map<String, Object> values;

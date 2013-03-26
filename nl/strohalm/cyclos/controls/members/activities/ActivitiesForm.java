@@ -19,13 +19,12 @@
  */
 package nl.strohalm.cyclos.controls.members.activities;
 
-import org.apache.struts.action.ActionForm;
-
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 /**
  * Form for member activities
  * @author luis
  */
-public class ActivitiesForm extends ActionForm {
+public class ActivitiesForm extends ValidatorActionForm {//SDESFIX
     private static final long serialVersionUID = -957064947722452469L;
     private long              memberId;
 
