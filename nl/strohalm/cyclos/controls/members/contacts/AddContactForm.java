@@ -19,13 +19,12 @@
  */
 package nl.strohalm.cyclos.controls.members.contacts;
 
-import org.apache.struts.action.ActionForm;
-
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 /**
  * Form for adding a contact
  * @author luis
  */
-public class AddContactForm extends ActionForm {
+public class AddContactForm extends ValidatorActionForm {//SDESFIX
     private static final long serialVersionUID = 7150579283632575910L;
     private long              memberId;
     private boolean           direct;

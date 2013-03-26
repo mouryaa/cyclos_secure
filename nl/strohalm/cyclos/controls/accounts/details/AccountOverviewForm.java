@@ -19,13 +19,12 @@
  */
 package nl.strohalm.cyclos.controls.accounts.details;
 
-import org.apache.struts.action.ActionForm;
-
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 /**
  * Form used to retrieve the account overview
  * @author luis
  */
-public class AccountOverviewForm extends ActionForm {
+public class AccountOverviewForm extends ValidatorActionForm {
     private static final long serialVersionUID = -5435387181178400517L;
     private long              memberId;
 

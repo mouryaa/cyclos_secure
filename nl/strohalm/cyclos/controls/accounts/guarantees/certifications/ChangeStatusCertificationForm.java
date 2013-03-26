@@ -19,7 +19,7 @@
  */
 package nl.strohalm.cyclos.controls.accounts.guarantees.certifications;
 
-import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used by all the actions related to certification's status change
@@ -27,7 +27,7 @@ import org.apache.struts.action.ActionForm;
  * @author ameyer
  * 
  */
-public class ChangeStatusCertificationForm extends ActionForm {
+public class ChangeStatusCertificationForm extends ValidatorActionForm {//SDESFIX
     private static final long serialVersionUID = -6582635060190306791L;
 
     private Long              certificationId;

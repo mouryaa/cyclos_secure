@@ -19,13 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.members.brokering;
 
-import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to change the broker of a given member
  * @author luis
  */
-public class ChangeBrokerForm extends ActionForm {
+public class ChangeBrokerForm extends ValidatorActionForm {//SDESFIX
     private static final long serialVersionUID = -2151029163706669560L;
     private String            comments;
     private long              memberId;

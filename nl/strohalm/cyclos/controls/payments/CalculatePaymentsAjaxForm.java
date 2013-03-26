@@ -21,13 +21,13 @@ package nl.strohalm.cyclos.controls.payments;
 
 import nl.strohalm.cyclos.utils.binding.MapBean;
 
-import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to generate and validate scheduled payments
  * @author luis
  */
-public class CalculatePaymentsAjaxForm extends ActionForm {
+public class CalculatePaymentsAjaxForm extends ValidatorActionForm {//SDESFIX
     private static final long serialVersionUID = 1690275600967013091L;
     private String            from;
     private String            amount;

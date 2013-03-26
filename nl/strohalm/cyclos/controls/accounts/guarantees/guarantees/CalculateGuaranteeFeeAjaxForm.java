@@ -21,9 +21,9 @@ package nl.strohalm.cyclos.controls.accounts.guarantees.guarantees;
 
 import nl.strohalm.cyclos.utils.binding.MapBean;
 
-import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
-public class CalculateGuaranteeFeeAjaxForm extends ActionForm {
+public class CalculateGuaranteeFeeAjaxForm extends ValidatorActionForm {//SDESFIX
 
     private static final long serialVersionUID = 4248067363018377462L;
     private String            guaranteeTypeId;

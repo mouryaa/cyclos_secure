@@ -19,13 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.accounts.accountfees;
 
-import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to manage an account fee execution
  * @author luis
  */
-public class AccountFeeExecutionForm extends ActionForm {
+public class AccountFeeExecutionForm extends ValidatorActionForm {//SDESFIX
     private static final long serialVersionUID = 472896043631931786L;
     private long              accountFeeId;
     private long              accountFeeLogId;

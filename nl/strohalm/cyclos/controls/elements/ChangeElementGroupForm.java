@@ -19,13 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.elements;
 
-import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to change an element group
  * @author luis
  */
-public abstract class ChangeElementGroupForm extends ActionForm {
+public abstract class ChangeElementGroupForm extends ValidatorActionForm {//SDESFIX
     private static final long serialVersionUID = -5134425622999378200L;
     private long              elementId;
     private long              newGroupId;

@@ -19,13 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.loans;
 
-import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to calculate loan payments
  * @author luis
  */
-public class CalculateLoanPaymentsAjaxForm extends ActionForm {
+public class CalculateLoanPaymentsAjaxForm extends ValidatorActionForm {//SDESFIX
     private static final long serialVersionUID = 8149174963151761861L;
     private String            amount;
     private String            date;
