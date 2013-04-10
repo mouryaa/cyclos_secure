@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.groups.customizedFiles;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to retrieve the available files to be customized for a group
  * @author luis
  */
-public class GetAvailableFilesForGroupAjaxForm extends ActionForm {
+public class GetAvailableFilesForGroupAjaxForm extends ValidatorActionForm {	//SDESFIX
     private static final long serialVersionUID = -3034444815971052256L;
     private long              groupId;
     private String            type;
