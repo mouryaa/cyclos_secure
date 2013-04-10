@@ -19,7 +19,8 @@
  */
 package nl.strohalm.cyclos.controls.accounts.guarantees.guarantees;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
 
 /**
  * Form used by all the actions related to guarantee's status change
@@ -27,7 +28,7 @@ import org.apache.struts.action.ActionForm;
  * @author ameyer
  * 
  */
-public class ChangeStatusGuaranteeForm extends ActionForm {
+public class ChangeStatusGuaranteeForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = -9192200630817491618L;
     private Long              guaranteeId;
