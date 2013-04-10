@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members.records;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a member record
  * @author Jefferson Magno
  */
-public class RemoveMemberRecordForm extends ActionForm {
+public class RemoveMemberRecordForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = -4282094615900312496L;
     private long              memberRecordId;
