@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members.pending;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to validate a public registration
  * @author luis
  */
-public class ValidateRegistrationForm extends ActionForm {
+public class ValidateRegistrationForm extends ValidatorActionForm {
     private static final long serialVersionUID = 8075952061837394047L;
     private String            key;
 

@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.details;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to retrieve a transaction details
  * @author luis
  */
-public class ViewTransactionForm extends ActionForm {
+public class ViewTransactionForm extends ValidatorActionForm {
     private static final long serialVersionUID = 2231197122604612537L;
     private long              transferId;
     private long              memberId;
