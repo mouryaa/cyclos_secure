@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.access.transactionpassword;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to request the logged member's transaction password
  * @author luis
  */
-public class TransactionPasswordForm extends ActionForm {
+public class TransactionPasswordForm extends ValidatorActionForm {
     private static final long serialVersionUID = 8659696896566650640L;
     private String            transactionPassword;
 

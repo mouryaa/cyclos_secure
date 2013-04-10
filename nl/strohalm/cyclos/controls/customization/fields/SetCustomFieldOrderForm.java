@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.customization.fields;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to set the custom field order
  * @author luis
  */
-public class SetCustomFieldOrderForm extends ActionForm {
+public class SetCustomFieldOrderForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 6307073054196911063L;
     private String            nature;

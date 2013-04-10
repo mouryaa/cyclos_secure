@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.external.filemappings;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to set the field mapping order
  * @author Jefferson Magno
  */
-public class SetFieldMappingsOrderForm extends ActionForm {
+public class SetFieldMappingsOrderForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = -7078218500200528759L;
     private long              fileMappingId;

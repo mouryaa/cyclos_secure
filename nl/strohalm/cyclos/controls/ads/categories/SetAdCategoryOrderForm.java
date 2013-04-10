@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.ads.categories;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to set the ad category order
  * @author Lucas Geiss
  */
-public class SetAdCategoryOrderForm extends ActionForm {
+public class SetAdCategoryOrderForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = -3918299366981297865L;
     private long              currentCategory;

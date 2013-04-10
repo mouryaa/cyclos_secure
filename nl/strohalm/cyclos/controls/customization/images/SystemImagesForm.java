@@ -19,14 +19,16 @@
  */
 package nl.strohalm.cyclos.controls.customization.images;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 import org.apache.struts.upload.FormFile;
 
 /**
  * Form used to update system images
  * @author luis
- */
-public class SystemImagesForm extends ActionForm {
+ */s
+public class SystemImagesForm extends ValidatorActionForm {
     private static final long serialVersionUID = -3625361135650610217L;
     private FormFile          upload;
     private String            name;

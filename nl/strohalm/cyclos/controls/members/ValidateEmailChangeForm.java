@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to validate an e-mail change request
  * @author luis
  */
-public class ValidateEmailChangeForm extends ActionForm {
+public class ValidateEmailChangeForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 5165220935335121540L;
     private String            key;
