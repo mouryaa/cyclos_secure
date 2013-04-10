@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members.messages;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Action used to view a given message
  * @author luis
  */
-public class ViewMessageForm extends ActionForm {
+public class ViewMessageForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 4473510829310986565L;
 

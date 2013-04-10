@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.alerts;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form for viewing an error log entry's details
  * @author luis
  */
-public class ViewErrorLogEntryForm extends ActionForm {
+public class ViewErrorLogEntryForm extends ValidatorActionForm {
     private static final long serialVersionUID = 470518462667205767L;
     private long              entryId;
 

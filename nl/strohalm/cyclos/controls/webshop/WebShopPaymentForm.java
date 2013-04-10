@@ -19,13 +19,16 @@
  */
 package nl.strohalm.cyclos.controls.webshop;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
+
 
 /**
  * Form used to perform webshop payments
  * @author luis
  */
-public class WebShopPaymentForm extends ActionForm {
+public class WebShopPaymentForm extends ValidatorActionForm {
     private static final long serialVersionUID = 6803511094872567772L;
     private long              transferTypeId;
     private String            principalType;
