@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.loans;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to confirm a loan
  * @author luis
  */
-public class ConfirmLoanForm extends ActionForm {
+public class ConfirmLoanForm extends ValidatorActionForm {	//SDESFIX
     private static final long serialVersionUID = -3429334115086476874L;
     private String            transactionPassword;
     private long              memberId;

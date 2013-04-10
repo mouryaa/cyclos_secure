@@ -19,9 +19,10 @@
  */
 package nl.strohalm.cyclos.controls.accounts.guarantees.types;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
-public class DeleteGuaranteeTypeForm extends ActionForm {
+public class DeleteGuaranteeTypeForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = -2501247750054032668L;
     private long              guaranteeTypeId;

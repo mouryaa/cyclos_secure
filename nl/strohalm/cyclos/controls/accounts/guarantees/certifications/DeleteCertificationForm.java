@@ -19,9 +19,10 @@
  */
 package nl.strohalm.cyclos.controls.accounts.guarantees.certifications;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
-public class DeleteCertificationForm extends ActionForm {
+public class DeleteCertificationForm extends ValidatorActionForm {	//SDESFIX
     private static final long serialVersionUID = -5083976532872951038L;
     private Long              certificationId;
 

@@ -19,7 +19,8 @@
  */
 package nl.strohalm.cyclos.controls.accounts.guarantees.paymentobligations;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used by all the actions related to payment Obligation's status change
@@ -27,7 +28,7 @@ import org.apache.struts.action.ActionForm;
  * @author ameyer
  * 
  */
-public class ChangeStatusPaymentObligationForm extends ActionForm {
+public class ChangeStatusPaymentObligationForm extends ValidatorActionForm {  //SDESFIX
     private static final long serialVersionUID = -6582635060190306791L;
 
     private Long              paymentObligationId;

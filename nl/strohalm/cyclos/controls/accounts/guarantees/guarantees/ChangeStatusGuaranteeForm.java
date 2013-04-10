@@ -28,7 +28,7 @@ import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
  * @author ameyer
  * 
  */
-public class ChangeStatusGuaranteeForm extends ValidatorActionForm {
+public class ChangeStatusGuaranteeForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = -9192200630817491618L;
     private Long              guaranteeId;
