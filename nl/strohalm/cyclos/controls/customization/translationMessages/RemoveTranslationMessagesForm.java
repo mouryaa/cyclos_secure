@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.customization.translationMessages;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove messages
  * @author luis
  */
-public class RemoveTranslationMessagesForm extends ActionForm {
+public class RemoveTranslationMessagesForm extends ValidatorActionForm {
     private static final long serialVersionUID = 376480636279077643L;
     private Long[]            messageIds;
 

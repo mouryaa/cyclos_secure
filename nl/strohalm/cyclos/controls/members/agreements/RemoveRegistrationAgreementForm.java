@@ -19,14 +19,16 @@
  */
 package nl.strohalm.cyclos.controls.members.agreements;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a registration agreement
  * 
  * @author luis
  */
-public class RemoveRegistrationAgreementForm extends ActionForm {
+public class RemoveRegistrationAgreementForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = -8863361751524283860L;
     private long              registrationAgreementId;
