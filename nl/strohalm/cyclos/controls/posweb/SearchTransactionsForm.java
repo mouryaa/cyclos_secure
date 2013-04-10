@@ -19,14 +19,16 @@
  */
 package nl.strohalm.cyclos.controls.posweb;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Action used to search transactions on PosWeb
  * 
  * @author luis
  */
-public class SearchTransactionsForm extends ActionForm {
+public class SearchTransactionsForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 7283885725771669048L;
 

@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.payments.scheduled;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to execute actions over a scheduled payment
  * @author Jefferson Magno
  */
-public class ScheduledPaymentForm extends ActionForm {
+public class ScheduledPaymentForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = -5893287673994930844L;
     private long              paymentId;
