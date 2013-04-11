@@ -19,14 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.ads.categories;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 import org.apache.struts.upload.FormFile;
 
 /**
  * Form used to import ad categories from a XML file
  * @author luis
  */
-public class ImportAdCategoriesForm extends ActionForm {
+public class ImportAdCategoriesForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = -3952401541015330629L;
     private FormFile          upload;
