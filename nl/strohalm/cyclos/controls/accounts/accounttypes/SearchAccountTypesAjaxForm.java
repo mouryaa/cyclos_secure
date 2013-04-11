@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.accounttypes;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form for searching account types using Ajax
  * @author luis
  */
-public class SearchAccountTypesAjaxForm extends ActionForm {
+public class SearchAccountTypesAjaxForm extends ValidatorActionForm {
     private static final long serialVersionUID = 2788986964514635961L;
     private String            canPayOwnerId;
     private String            ownerId;

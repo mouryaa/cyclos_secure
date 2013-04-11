@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.transfertypes;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a transfer type
  * @author luis
  */
-public class RemoveTransferTypeForm extends ActionForm {
+public class RemoveTransferTypeForm extends ValidatorActionForm {
     private static final long serialVersionUID = 6788622597818244502L;
     private long              accountTypeId;
     private long              transferTypeId;

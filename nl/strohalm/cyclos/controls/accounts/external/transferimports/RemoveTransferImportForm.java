@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.external.transferimports;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a transfer import
  * @author luis
  */
-public class RemoveTransferImportForm extends ActionForm {
+public class RemoveTransferImportForm extends ValidatorActionForm {
     private static final long serialVersionUID = 8657467947693158824L;
     private long              transferImportId;
 

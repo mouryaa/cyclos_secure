@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members.messages;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form class to use to remove a message category.
  * @author jeancarlo
  */
-public class RemoveMessageCategoryForm extends ActionForm {
+public class RemoveMessageCategoryForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 1274056136036825087L;
     private long              messageCategoryId;

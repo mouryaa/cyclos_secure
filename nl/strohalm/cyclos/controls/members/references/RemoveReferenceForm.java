@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members.references;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a reference
  * @author luis
  */
-public class RemoveReferenceForm extends ActionForm {
+public class RemoveReferenceForm extends ValidatorActionForm {
     private static final long serialVersionUID = 6313739272189861222L;
     private long              memberId;
     private long              referenceId;

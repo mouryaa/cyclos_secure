@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members.sms;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used for Ajax SMS mailing variables search
  * @author jcomas
  */
-public class SearchSmsMailingVariablesAjaxForm extends ActionForm {
+public class SearchSmsMailingVariablesAjaxForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 1L;
     private Long[]            groupIds;
