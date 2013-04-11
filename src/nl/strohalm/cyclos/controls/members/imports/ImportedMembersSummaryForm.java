@@ -19,14 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members.imports;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to view the import summary and to confirm the import
  * 
  * @author luis
  */
-public class ImportedMembersSummaryForm extends ActionForm {
+public class ImportedMembersSummaryForm extends ValidatorActionForm {	//SDESFIX
     private static final long serialVersionUID = -6665329044416564608L;
     private long              importId;
     private boolean           sendActivationMail;
