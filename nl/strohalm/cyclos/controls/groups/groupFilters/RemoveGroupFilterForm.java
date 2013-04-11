@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.groups.groupFilters;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a group filter
  * @author jefferson
  */
-public class RemoveGroupFilterForm extends ActionForm {
+public class RemoveGroupFilterForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 1452966256679031015L;
     private long              groupFilterId;
