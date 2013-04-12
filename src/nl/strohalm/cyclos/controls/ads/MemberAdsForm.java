@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.ads;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to retrieve ads from a given member
  * @author luis
  */
-public class MemberAdsForm extends ActionForm {
+public class MemberAdsForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = 9079811164214931567L;
     private long              memberId;

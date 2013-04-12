@@ -19,14 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.customization.translationMessages;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 import org.apache.struts.upload.FormFile;
 
 /**
  * Form used to import messages
  * @author luis
  */
-public class ImportTranslationMessagesForm extends ActionForm {
+public class ImportTranslationMessagesForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = -6932700028184986570L;
     private FormFile          fileUpload;

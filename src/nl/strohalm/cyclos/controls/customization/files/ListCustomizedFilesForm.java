@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.customization.files;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to list the customized files
  * @author luis
  */
-public class ListCustomizedFilesForm extends ActionForm {
+public class ListCustomizedFilesForm extends ValidatorActionForm {	//SDESFIX
     private static final long serialVersionUID = -1840992657554611531L;
     private String            type;
 
