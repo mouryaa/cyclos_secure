@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.accounts.accountfees;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to remove an account fee
  * @author luis
  */
-public class RemoveAccountFeeForm extends ActionForm {
+public class RemoveAccountFeeForm extends ValidatorActionForm {	//SDESFIX
     private static final long serialVersionUID = -4043212044079674959L;
     private long              accountTypeId;
     private long              accountFeeId;

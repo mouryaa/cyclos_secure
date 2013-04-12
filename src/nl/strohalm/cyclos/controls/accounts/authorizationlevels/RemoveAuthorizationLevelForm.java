@@ -19,13 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.accounts.authorizationlevels;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
 
 /**
  * Form used to remove an authorization Level
  * @author Jefferson Magno
  */
-public class RemoveAuthorizationLevelForm extends ActionForm {
+public class RemoveAuthorizationLevelForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = -8210354850409062856L;
     private long              authorizationLevelId;
