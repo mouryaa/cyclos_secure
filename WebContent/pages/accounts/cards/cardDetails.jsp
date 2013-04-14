@@ -87,7 +87,7 @@ var hasActiveCard = ${hasActiveCard}
 							            <c:if test="${showCardSecurityCode && not empty card.cardSecurityCode}">
 								            <tr>
 								                <td class="label tdHeaderContents" width="30%"><bean:message key='card.securityCode'/></td>
-								                <td>${card.cardSecurityCode}</td>
+								                <td><c: out value="${card.cardSecurityCode}"/></td>
 								            </tr>
 								        </c:if>
 							         </cyclos:layout>

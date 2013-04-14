@@ -165,14 +165,14 @@
 					<td width="24%" class="label"><bean:message key="member.username"/></td>
 					<td>
 						<html:hidden property="query(member)" styleId="memberId"/>
-						<input id="memberUsername" class="large" value="${query.member.username}">
+						<input id="memberUsername" class="large" value="<c: out value="${query.member.username}"/>">
 						<div id="membersByUsername" class="autoComplete"></div>
 					</td>
 				</tr>
 				<tr>
 					<td class="label"><bean:message key="member.member"/></td>
 					<td>
-						<input id="memberName" class="large" value="${query.member.name}">
+						<input id="memberName" class="large" value="<c: out value="${query.member.name}"/>">
 						<div id="membersByName" class="autoComplete"></div>
 					</td>
 				</tr>

@@ -93,12 +93,12 @@
 					<cyclos:cell className="label" width="20%"><bean:message key="member.username"/></cyclos:cell>
 					<cyclos:cell>
 						<html:hidden styleId="queryMemberId" property="query(member)"/>
-						<input id="memberUsername" class="full" value="${query.member.username}">
+						<input id="memberUsername" class="full" value="<c: out value="${query.member.username}"/>">
 						<div id="membersByUsername" class="autoComplete"></div>
 					</cyclos:cell>
 					<cyclos:cell className="label" width="20%"><bean:message key="member.memberName"/></cyclos:cell>
 					<cyclos:cell>
-						<input id="memberName" class="full" value="${query.member.name}">
+						<input id="memberName" class="full" value="<c: out value="${query.member.name}"/>">
 						<div id="membersByName" class="autoComplete"></div>
 					</cyclos:cell>
 					
@@ -140,7 +140,7 @@
 							<html:select property="query(by)">
 								<html:option value=""><bean:message key="global.search.all"/></html:option>
 								<c:forEach var="operator" items="${operators}">
-									<html:option value="${operator.id}">${operator.name} (${operator.username})</html:option>
+									<html:option value="<c: out value="${operator.id}"/>"><c: out value="${operator.name}"/> (<c: out value="${operator.username}"/>)</html:option>
 								</c:forEach>
 							</html:select>
 						</cyclos:cell>
@@ -156,7 +156,7 @@
 	   				</tr>
 				</c:when><c:otherwise>
 				
-					<c:choose><c:when test="${empty paymentStatus}">
+					<c:choose><c:when test="<c: out value="${empty paymentStatus}"/>">
 						<%-- When there is no payment status, show on the same row the mode button and the filter --%>
 						<tr>
 		   					<td align="left" width="30%"><input id="modeButton" type="button" class="button" value="<bean:message key="global.search.ADVANCED"/>"></td>
@@ -275,7 +275,7 @@
 						<td align="left">
 							<c:set var="relatedNature" value="${cyclos:name(related.nature)}"/>
 							<c:choose><c:when test="${relatedNature == 'SYSTEM'}">
-								${related.ownerName}
+								<c: out value="${related.ownerName}"/>
 							</c:when><c:otherwise>
 								<cyclos:profile elementId="${entry.relatedMemberId}"/>
 							</c:otherwise></c:choose>

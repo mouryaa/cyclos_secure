@@ -31,7 +31,7 @@
 		                    <td align="left"><bean:message key="adminTasks.indexes.type.${type}" /></td>
 		                    <td align="center"><bean:message key="adminTasks.indexes.status.${status}" /></td>
 		                    <td align="center">
-		                    	<a class="default rebuild" entityType="${type}">
+		                    	<a class="default rebuild" entityType="<c: out value="${type}"/>">
 									<bean:message key="adminTasks.indexes.rebuild" />
 		                    	</a>
 		                    </td>

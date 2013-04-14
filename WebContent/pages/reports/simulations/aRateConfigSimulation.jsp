@@ -9,7 +9,7 @@
 	var chargeTypes = [];
 	<c:forEach var="type" items="${chargeTypes}">
 		<c:set var="label"><cyclos:escapeJS><bean:message key="transactionFee.chargeType.${type}"/></cyclos:escapeJS></c:set>
-		chargeTypes.push({name: '${type}', label: '${label}'});
+		chargeTypes.push({name: '<c: out value="${type}"/>', label: '<c: out value="${label}"/>'});
 	</c:forEach>
 
 	var tts = [];
