@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.customization.fields;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to change all occurrences of a field value to another one
  * @author luis
  */
-public class MoveCustomFieldPossibleValueForm extends ActionForm {
+public class MoveCustomFieldPossibleValueForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = -2590042457969080716L;
     private long              oldValueId;

@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.external;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a External Transfer Type
  * @author Lucas Geiss
  */
-public class RemoveExternalTransferTypeForm extends ActionForm {
+public class RemoveExternalTransferTypeForm extends ValidatorActionForm {
     private static final long serialVersionUID = 6350619063170559290L;
     private long              externalTransferTypeId;
 

@@ -19,9 +19,10 @@
  */
 package nl.strohalm.cyclos.controls.access.transactionpassword;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
-public class IsUsedTransactionPasswordAjaxForm extends ActionForm {
+public class IsUsedTransactionPasswordAjaxForm extends ValidatorActionForm {	//SDESFIX
     private static final long serialVersionUID = 4509343244277205735L;
 
     private String            transferTypeId;

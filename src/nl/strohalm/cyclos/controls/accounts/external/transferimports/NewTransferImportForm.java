@@ -19,14 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.external.transferimports;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 import org.apache.struts.upload.FormFile;
 
 /**
  * Form used to import a new external transfer file
  * @author luis
  */
-public class NewTransferImportForm extends ActionForm {
+public class NewTransferImportForm extends ValidatorActionForm {	//SDESFIX
     private static final long serialVersionUID = -4881566000575163990L;
     private long              externalAccountId;
     private FormFile          file;

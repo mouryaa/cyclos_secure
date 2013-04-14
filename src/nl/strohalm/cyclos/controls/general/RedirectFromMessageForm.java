@@ -19,14 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.general;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to redirect the user to the correct page when coming from a message or e-mail link
  * 
  * @author luis
  */
-public class RedirectFromMessageForm extends ActionForm {
+public class RedirectFromMessageForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = 9086219273465683165L;
     private long              userId;

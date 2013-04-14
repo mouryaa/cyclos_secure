@@ -19,9 +19,10 @@
  */
 package nl.strohalm.cyclos.controls.members.adinterests;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
-public class RemoveAdInterestsForm extends ActionForm {
+public class RemoveAdInterestsForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = -6652344891636985518L;
 

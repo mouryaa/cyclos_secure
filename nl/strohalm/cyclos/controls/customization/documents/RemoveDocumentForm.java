@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.customization.documents;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a document
  * @author luis
  */
-public class RemoveDocumentForm extends ActionForm {
+public class RemoveDocumentForm extends ValidatorActionForm {
     private static final long serialVersionUID = -8145484859333653790L;
     private long              documentId;
 

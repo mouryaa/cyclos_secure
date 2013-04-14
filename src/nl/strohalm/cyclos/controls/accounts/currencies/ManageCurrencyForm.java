@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.accounts.currencies;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to prepare the manage currency screen
  * @author rinke
  */
-public class ManageCurrencyForm extends ActionForm {
+public class ManageCurrencyForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = 6008964984264958296L;
     private long              currencyId;

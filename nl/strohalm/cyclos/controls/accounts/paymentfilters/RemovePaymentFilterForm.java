@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.paymentfilters;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a payment filter
  * @author luis
  */
-public class RemovePaymentFilterForm extends ActionForm {
+public class RemovePaymentFilterForm extends ValidatorActionForm {
     private static final long serialVersionUID = 4391259101311009093L;
     private long              accountTypeId;
     private long              paymentFilterId;

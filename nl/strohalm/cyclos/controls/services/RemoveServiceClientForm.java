@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.services;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to edit an web services client
  * @author luis
  */
-public class RemoveServiceClientForm extends ActionForm {
+public class RemoveServiceClientForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 7459978429658952342L;
     private long              clientId;

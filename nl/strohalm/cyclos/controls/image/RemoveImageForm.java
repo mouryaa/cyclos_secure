@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.image;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove an image
  * @author luis
  */
-public class RemoveImageForm extends ActionForm {
+public class RemoveImageForm extends ValidatorActionForm {
     private static final long serialVersionUID = -8313662260735649487L;
     private long              id;
 

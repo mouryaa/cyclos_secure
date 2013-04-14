@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.external.filemappings;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to reset a file mapping
  * @author jefferson
  */
-public class ResetFileMappingForm extends ActionForm {
+public class ResetFileMappingForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = -1887973344072644907L;
     private Long              fileMappingId;

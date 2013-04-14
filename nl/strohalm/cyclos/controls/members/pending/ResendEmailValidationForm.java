@@ -19,14 +19,16 @@
  */
 package nl.strohalm.cyclos.controls.members.pending;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to resend a validation e-mail
  * 
  * @author luis
  */
-public class ResendEmailValidationForm extends ActionForm {
+public class ResendEmailValidationForm extends ValidatorActionForm {
     private static final long serialVersionUID = 7010321011236698562L;
     private long              pendingMemberId;
 

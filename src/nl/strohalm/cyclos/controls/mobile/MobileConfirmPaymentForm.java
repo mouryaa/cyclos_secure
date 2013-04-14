@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.mobile;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to confirm the payment
  * @author luis
  */
-public class MobileConfirmPaymentForm extends ActionForm {
+public class MobileConfirmPaymentForm extends ValidatorActionForm {	//SDESFIX
     private static final long serialVersionUID = -4128318866073425724L;
     private String            transactionPassword;
 

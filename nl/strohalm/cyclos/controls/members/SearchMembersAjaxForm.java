@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used for Ajax member search
  * @author luis
  */
-public class SearchMembersAjaxForm extends ActionForm {
+public class SearchMembersAjaxForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 9179278424615452918L;
     private boolean           brokered;

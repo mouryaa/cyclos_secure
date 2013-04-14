@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.general;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to set the cookies regarding guest pages customization, then redirect to a given path
  * @author luis
  */
-public class RedirectForm extends ActionForm {
+public class RedirectForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = -7170681778877879978L;
 

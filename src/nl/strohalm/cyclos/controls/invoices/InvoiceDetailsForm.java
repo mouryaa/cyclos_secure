@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.invoices;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to view details of an invoice
  * @author luis
  */
-public class InvoiceDetailsForm extends ActionForm {
+public class InvoiceDetailsForm extends ValidatorActionForm {	//SDESFIX
     private static final long serialVersionUID = 2645557618070657041L;
     private long              invoiceId;
     private long              memberId;

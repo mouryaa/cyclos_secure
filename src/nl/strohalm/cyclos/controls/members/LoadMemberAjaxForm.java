@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.members;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to load a member, either by username or card number
  * @author luis
  */
-public class LoadMemberAjaxForm extends ActionForm {
+public class LoadMemberAjaxForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = -3467757552021943683L;
     private String            channel;

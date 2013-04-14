@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.customization.fields;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a custom field possible value
  * @author luis
  */
-public class RemoveCustomFieldPossibleValueForm extends ActionForm {
+public class RemoveCustomFieldPossibleValueForm extends ValidatorActionForm {
     private static final long serialVersionUID = 6764053751484009425L;
     private long              fieldId;
     private long              possibleValueId;

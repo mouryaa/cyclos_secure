@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.members.loangroups;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form used to list the loan groups of a given member
  * @author luis
  */
-public class MemberLoanGroupsForm extends ActionForm {
+public class MemberLoanGroupsForm extends ValidatorActionForm {	//SDESFIX
     private static final long serialVersionUID = -3691633343593039474L;
     private long              memberId;
 

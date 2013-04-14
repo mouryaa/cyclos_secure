@@ -21,13 +21,15 @@ package nl.strohalm.cyclos.controls.groups;
 
 import nl.strohalm.cyclos.annotations.Inject;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a group
  * @author luis
  */
-public class RemoveGroupForm extends ActionForm {
+public class RemoveGroupForm extends ValidatorActionForm {
     private static final long serialVersionUID = 6749562783656184590L;
     private long              groupId;
 

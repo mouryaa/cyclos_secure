@@ -19,13 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.general;
 
-import org.apache.struts.action.ActionForm;
+//import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
 
 /**
  * Form for invite person
  * @author luis
  */
-public class InviteForm extends ActionForm {
+public class InviteForm extends ValidatorActionForm {	//SDESFIX
 
     private static final long serialVersionUID = -2656961063738047289L;
     private String            to;
