@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members.documents;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to select a document to print
  * @author luis
  */
-public class SelectDocumentForm extends ActionForm {
+public class SelectDocumentForm extends ValidatorActionForm {
     private static final long serialVersionUID = -9025738172359461119L;
     private long              memberId;
 

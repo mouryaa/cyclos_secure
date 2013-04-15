@@ -19,14 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.accounttypes;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove an account type
  * @author luis
  */
-public class RemoveAccountTypeForm extends ValidatorActionForm {	//SDESFIX
+public class RemoveAccountTypeForm extends ValidatorActionForm {
     private static final long serialVersionUID = 5333206254491530572L;
     private long              accountTypeId;
 

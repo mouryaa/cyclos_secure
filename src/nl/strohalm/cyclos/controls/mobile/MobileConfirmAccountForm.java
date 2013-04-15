@@ -19,10 +19,9 @@
  */
 package nl.strohalm.cyclos.controls.mobile;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
-public class MobileConfirmAccountForm extends ValidatorActionForm {	//SDESFIX
+public class MobileConfirmAccountForm extends ActionForm {
 
     private static final long serialVersionUID = 904178024684353572L;
     public Long               id;

@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.currencies;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a currency
  * @author luis
  */
-public class RemoveCurrencyForm extends ActionForm {
+public class RemoveCurrencyForm extends ValidatorActionForm {
     private static final long serialVersionUID = 6350619063170559290L;
     private long              currencyId;
 

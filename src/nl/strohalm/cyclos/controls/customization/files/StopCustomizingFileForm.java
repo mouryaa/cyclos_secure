@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.customization.files;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to stop customizing a file
  * @author luis
  */
-public class StopCustomizingFileForm extends ActionForm {
+public class StopCustomizingFileForm extends ValidatorActionForm {
     private static final long serialVersionUID = -1241297385871448529L;
     private long              fileId;
 

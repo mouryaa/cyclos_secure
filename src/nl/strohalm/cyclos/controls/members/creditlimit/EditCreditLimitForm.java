@@ -19,15 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.members.creditlimit;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
 /**
  * Form used to edit a member's credit limit
  * @author luis
  */
-public class EditCreditLimitForm extends ValidationActionForm {	//SDESFIX
-
+public class EditCreditLimitForm extends ActionForm {
     private static final long serialVersionUID = 5254024498504729599L;
     private long              memberId;
     private long[]            accountTypeIds;

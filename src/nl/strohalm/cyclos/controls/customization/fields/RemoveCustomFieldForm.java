@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.customization.fields;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a custom field
  * @author luis
  */
-public class RemoveCustomFieldForm extends ActionForm {
+public class RemoveCustomFieldForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 3192437249501465121L;
     private String            nature;

@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.groups.groupFilters.customizedFiles;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to stop customizing a file for a given group filter
  * @author luis
  */
-public class StopCustomizingGroupFilterFileForm extends ActionForm {
+public class StopCustomizingGroupFilterFileForm extends ValidatorActionForm {
     private static final long serialVersionUID = -1241297385871448529L;
     private long              fileId;
     private long              groupFilterId;

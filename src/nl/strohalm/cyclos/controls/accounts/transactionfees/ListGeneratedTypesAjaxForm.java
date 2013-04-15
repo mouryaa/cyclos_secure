@@ -19,14 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.accounts.transactionfees;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
 /**
  * Form used to list generated transfer types for a transaction fee
  * @author Jefferson Magno
  */
-public class ListGeneratedTypesAjaxForm extends ValidatorActionForm {	//SDESFIX
+public class ListGeneratedTypesAjaxForm extends ActionForm {
 
     private static final long serialVersionUID = -2471894870191458777L;
 

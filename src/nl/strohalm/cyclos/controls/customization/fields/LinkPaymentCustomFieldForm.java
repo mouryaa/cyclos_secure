@@ -19,15 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.customization.fields;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
 /**
  * Form used to link an existing custom field to another payment type
  * 
  * @author luis
  */
-public class LinkPaymentCustomFieldForm extends ValidatorActionForm {	//SDESFIX
+public class LinkPaymentCustomFieldForm extends ActionForm {
     private static final long serialVersionUID = -8016588492822515527L;
     private long              accountTypeId;
     private long              transferTypeId;

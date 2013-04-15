@@ -19,14 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.customization.files;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
 /**
  * Form used to retrieve a file contents
  * @author luis
  */
-public class GetFileContentsAjaxForm extends ValidatorActionForm {	//SDESFIX
+public class GetFileContentsAjaxForm extends ActionForm {
     private static final long serialVersionUID = 7176466222532057695L;
     private String            fileName;
     private String            type;

@@ -19,14 +19,16 @@
  */
 package nl.strohalm.cyclos.controls.members.printsettings;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a receipt printer settings
  * 
  * @author luis
  */
-public class RemoveReceiptPrinterSettingsForm extends ActionForm {
+public class RemoveReceiptPrinterSettingsForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 1077949441285476052L;
     private Long              id;

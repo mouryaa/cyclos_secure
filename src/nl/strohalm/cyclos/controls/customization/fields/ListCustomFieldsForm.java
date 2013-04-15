@@ -19,14 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.customization.fields;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
 /**
  * Form used to list custom fields
  * @author luis
  */
-public class ListCustomFieldsForm extends ValidatorActionForm {	//SDESFIX
+public class ListCustomFieldsForm extends ActionForm {
     private static final long serialVersionUID = 8889535869458448753L;
     private String            nature;
 

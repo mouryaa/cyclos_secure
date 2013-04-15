@@ -19,14 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.settings;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
 /**
  * Form used to edit a message setting
  * @author luis
  */
-public class EditMessageSettingForm extends ValidationActionForm {	//SDESFIX
+public class EditMessageSettingForm extends ActionForm {
 
     private static final long serialVersionUID = -9189257236726821589L;
 

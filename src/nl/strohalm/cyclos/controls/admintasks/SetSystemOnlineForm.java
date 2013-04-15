@@ -19,14 +19,16 @@
  */
 package nl.strohalm.cyclos.controls.admintasks;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to set the system online / offline
  * 
  * @author luis
  */
-public class SetSystemOnlineForm extends ActionForm {
+public class SetSystemOnlineForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = -4598583880349299783L;
     private boolean           online;

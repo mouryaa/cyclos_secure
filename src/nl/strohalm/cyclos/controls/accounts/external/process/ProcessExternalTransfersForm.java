@@ -19,14 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.accounts.external.process;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
 /**
  * Form used to process external transfers
  * @author luis
  */
-public class ProcessExternalTransfersForm extends ValidatorActionForm {	//SDESFIX
+public class ProcessExternalTransfersForm extends ActionForm {
     private static final long serialVersionUID = 6528878757640496850L;
     private long              externalAccountId;
     private String[]          externalTransfer;

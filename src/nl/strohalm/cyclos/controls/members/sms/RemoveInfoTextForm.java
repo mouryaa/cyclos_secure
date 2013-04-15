@@ -21,13 +21,15 @@ package nl.strohalm.cyclos.controls.members.sms;
 
 import nl.strohalm.cyclos.annotations.Inject;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove an infotext
  * @author jcomas
  */
-public class RemoveInfoTextForm extends ActionForm {
+public class RemoveInfoTextForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 1L;
     private long              infoTextId;

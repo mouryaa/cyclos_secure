@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.external;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a External Account
  * @author Lucas Geiss
  */
-public class RemoveExternalAccountForm extends ActionForm {
+public class RemoveExternalAccountForm extends ValidatorActionForm {
     private static final long serialVersionUID = -3694123388080600042L;
     private long              externalAccountId;
 

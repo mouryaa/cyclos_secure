@@ -19,10 +19,9 @@
  */
 package nl.strohalm.cyclos.controls.accounts.guarantees.types;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
-public class ListGuaranteeTypesForm extends ValidatorActionForm {	//SDESFIX
+public class ListGuaranteeTypesForm extends ActionForm {
 
     /**
      * 

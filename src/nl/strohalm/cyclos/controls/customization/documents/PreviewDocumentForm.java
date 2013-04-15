@@ -19,14 +19,13 @@
  */
 package nl.strohalm.cyclos.controls.customization.documents;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
 /**
  * Form used to view a document
  * @author luis
  */
-public class PreviewDocumentForm extends ValidatorActionForm {	//SDESFIX
+public class PreviewDocumentForm extends ActionForm {
 
     private static final long serialVersionUID = 3248883737816439649L;
     private long              documentId;

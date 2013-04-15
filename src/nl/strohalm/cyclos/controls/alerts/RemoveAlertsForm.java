@@ -19,14 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.alerts;
 
-//mport org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove the selected alerts
  * @author luis
  */
-public class RemoveAlertsForm extends ValidatorActionForm {	//SDESFIX
+public class RemoveAlertsForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 8287564934575223447L;
 

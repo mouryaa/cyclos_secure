@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.customization.images;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a custom image
  * @author luis
  */
-public class RemoveCustomImageForm extends ActionForm {
+public class RemoveCustomImageForm extends ValidatorActionForm {
     private static final long serialVersionUID = 1006278484446624163L;
     private long              imageId;
 

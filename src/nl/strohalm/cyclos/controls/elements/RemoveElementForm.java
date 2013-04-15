@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.elements;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to permanently remove an element
  * @author luis
  */
-public class RemoveElementForm extends ActionForm {
+public class RemoveElementForm extends ValidatorActionForm {
     private static final long serialVersionUID = -7624570753297805723L;
     private long              elementId;
 

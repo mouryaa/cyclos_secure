@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members.brokering;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to suspend a broker commission
  * @author Jefferson Magno
  */
-public class SuspendBrokerCommissionForm extends ActionForm {
+public class SuspendBrokerCommissionForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = -3958057442843909730L;
 

@@ -19,14 +19,16 @@
  */
 package nl.strohalm.cyclos.controls.customization.fields;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to list possible values by ajax
  * 
  * @author luis
  */
-public class SearchPossibleValuesAjaxForm extends ActionForm {
+public class SearchPossibleValuesAjaxForm extends ValidatorActionForm {
     private static final long serialVersionUID = -3939106630258068897L;
     private long              parentValueId;
     private long              fieldId;

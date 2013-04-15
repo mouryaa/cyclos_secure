@@ -19,11 +19,10 @@
  */
 package nl.strohalm.cyclos.controls.customization.themes;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 import org.apache.struts.upload.FormFile;
 
-public class ImportThemeForm extends ValidatorActionForm {	//SDESFIX
+public class ImportThemeForm extends ActionForm {
 
     private static final long serialVersionUID = 9214708891252184608L;
     private FormFile          upload;

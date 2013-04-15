@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.members.messages;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used for Ajax message categories search
  * @author jefferson
  */
-public class SearchMessageCategoriesAjaxForm extends ActionForm {
+public class SearchMessageCategoriesAjaxForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = -2177963906029101427L;
     private String[]          groups;

@@ -19,15 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.ads.imports;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
 /**
  * Form used to view the import summary and to confirm the import
  * 
  * @author luis
  */
-public class ImportedAdsSummaryForm extends ValidatorActionForm {	//SDESFIX
+public class ImportedAdsSummaryForm extends ActionForm {
     private static final long serialVersionUID = -6665329044416564608L;
     private long              importId;
 

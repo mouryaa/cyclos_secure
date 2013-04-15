@@ -19,15 +19,14 @@
  */
 package nl.strohalm.cyclos.controls.admintasks;
 
-//import org.apache.struts.action.ActionForm;
-import org.apache.struts.validator.ValidatorActionForm;////SDESFIX
+import org.apache.struts.action.ActionForm;
 
 /**
  * Form used to perform actions over full-text indexes
  * 
  * @author luis
  */
-public class IndexesForm extends ValidatorActionForm {
+public class IndexesForm extends ActionForm {
 
     private static final long serialVersionUID = -4598583880349299783L;
     private String            index;

@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.accounts.cards;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * 
  * @author rodrigo
  */
-public class UpdateCardForm extends ActionForm {
+public class UpdateCardForm extends ValidatorActionForm {
 
     private static final long serialVersionUID = 7503472851176856243L;
 

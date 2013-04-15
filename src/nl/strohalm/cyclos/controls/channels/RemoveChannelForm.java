@@ -19,13 +19,15 @@
  */
 package nl.strohalm.cyclos.controls.channels;
 
-import org.apache.struts.action.ActionForm;
+// import org.apache.struts.action.ActionForm;
+import org.apache.struts.validator.ValidatorActionForm; //SDESFIX
+
 
 /**
  * Form used to remove a channel
  * @author luis
  */
-public class RemoveChannelForm extends ActionForm {
+public class RemoveChannelForm extends ValidatorActionForm {
     private static final long serialVersionUID = 8838206891097384320L;
     private long              channelId;
 
