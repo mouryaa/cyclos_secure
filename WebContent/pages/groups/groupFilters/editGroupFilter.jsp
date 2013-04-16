@@ -108,10 +108,10 @@
 			            	<c:forEach var="file" items="${customizedFiles}">
 				            	<tr class="<t:toggle>ClassColor1|ClassColor2</t:toggle>">
 				            		<td><cyclos:escapeHTML><bean:message key="customizedFile.type.${file.type}" /></cyclos:escapeHTML></td>
-				            		<td><cyclos:escapeHTML>${file.name}</cyclos:escapeHTML></td>
+				            		<td><cyclos:escapeHTML>"<c:out value="${file.name}"/>"</cyclos:escapeHTML></td>
 				            		<td align="center" nowrap="nowrap">
 				                    	<c:if test="${cyclos:name(file.type) != 'STYLE'}">
-				                    		<img class="preview previewCustomizedFile" src="<c:url value="/pages/images/preview.gif"/>" fileName="<cyclos:escapeHTML>${file.name}</cyclos:escapeHTML>" fileType="<cyclos:escapeHTML>${file.type}</cyclos:escapeHTML>" border="0">
+				                    		<img class="preview previewCustomizedFile" src="<c:url value="/pages/images/preview.gif"/>" fileName="<cyclos:escapeHTML>${file.name}</cyclos:escapeHTML>" fileType="<cyclos:escapeHTML><c:out value="${file.type}/>"</cyclos:escapeHTML>" border="0">
 				                    	</c:if>
 					            		<c:choose><c:when test="${canManageCustomizedFiles}">
 											<img fileId="${file.id}" class="edit customizedFileDetails" src="<c:url value="/pages/images/edit.gif" />" />

@@ -694,7 +694,7 @@
 	<c:set var="help" value="${isMember ? 'operators#manage_group_customized_files' : 'groups#manage_group_customized_files'}"/>
 	<c:choose>
 		<c:when test="${empty customizedFiles}">
-			<div class="footerNote" helpPage="${help}" title="<bean:message key="group.customizedFiles.title"/>"><bean:message key="group.customizedFiles.noResults"/></div>
+			<div class="footerNote" helpPage="<c:out value="${help}"/>" title="<bean:message key="group.customizedFiles.title"/>"><bean:message key="group.customizedFiles.noResults"/></div>
 		</c:when>
 		<c:otherwise>
 			<table class="defaultTableContent" cellspacing="0" cellpadding="0">
@@ -717,10 +717,10 @@
 				            		<c:if test="${isAdmin}">
 				            			<td><cyclos:escapeHTML><bean:message key="customizedFile.type.${file.type}" /></cyclos:escapeHTML></td>
 				            		</c:if>
-				            		<td><cyclos:escapeHTML>${file.name}</cyclos:escapeHTML></td>
+				            		<td><cyclos:escapeHTML>"<c:out value="${file.name}"/>"</cyclos:escapeHTML></td>
 				            		<td align="center" nowrap="nowrap">
 				                    	<c:if test="${cyclos:name(file.type) != 'STYLE'}">
-				                    		<img class="preview previewCustomizedFile" src="<c:url value="/pages/images/preview.gif"/>" fileName="<cyclos:escapeHTML>${file.name}</cyclos:escapeHTML>" fileType="<cyclos:escapeHTML>${file.type}</cyclos:escapeHTML>" border="0">
+				                    		<img class="preview previewCustomizedFile" src="<c:url value="/pages/images/preview.gif"/>" fileName="<cyclos:escapeHTML>"<c:out value="${file.name}"/>"</cyclos:escapeHTML>" fileType="<cyclos:escapeHTML>${file.type}</cyclos:escapeHTML>" border="0">
 				                    	</c:if>
 					            		<c:choose><c:when test="${editable && canManageFiles}">
 											<img fileId="${file.id}" class="edit customizedFileDetails" src="<c:url value="/pages/images/edit.gif" />" />
