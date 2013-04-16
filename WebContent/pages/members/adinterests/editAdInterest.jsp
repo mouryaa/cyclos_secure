@@ -68,14 +68,14 @@
 						<td class="label"><bean:message key='member.username'/></td>
 						<td>
 							<html:hidden styleId="memberId" property="adInterest(member)"/>
-							<input id="memberUsername" class="InputBoxDisabled large" disabled="true" value="${adInterest.member.username}">
+							<input id="memberUsername" class="InputBoxDisabled large" disabled="true" "<c:out value="${adInterest.member.username}"/>" > 
 							<div id="membersByUsername" class="autoComplete"></div>
 						</td>
 					</tr>
 					<tr>
 						<td class="label" width="25%"><bean:message key='member.name'/></td>
 						<td>
-							<input id="memberName" class="InputBoxDisabled large" disabled="true" value="${adInterest.member.name}">
+							<input id="memberName" class="InputBoxDisabled large" disabled="true" "<c:out value="${adInterest.member.name}"/>" >
 							<div id="membersByName" class="autoComplete"></div>
 						</td>
 					</tr>

@@ -46,7 +46,7 @@
 										<input type="text" name="defaultBrokerCommission.value" id="dbc_value_${id}" class="small floatHighPrecision InputBoxDisabled" readonly="true" value='<cyclos:format number="${defaultBrokerCommission.amount.value}" precision="4"/>'/>
 										<select name="defaultBrokerCommission.type" id="dbc_type_${id}" class="InputBoxDisabled" disabled="disabled">
 											<c:forEach var="type" items="${amountTypes}">
-												<c:set var="selected" value='${cyclos:name(defaultBrokerCommission.amount.type) == type ? "selected" : ""}'/>
+												<c:set var="selected" "<c:out value='${cyclos:name(defaultBrokerCommission.amount.type) == type ? "selected" : ""}'/> "/>"
 												<option value="${type}" ${selected}><bean:message key="global.amount.type.${type}"/></option>
 											</c:forEach>
 										</select>

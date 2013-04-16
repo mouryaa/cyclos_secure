@@ -31,14 +31,14 @@
 				<c:if test="${not empty fromMember}">
 					<tr>
 						<td class="headerLabel" width="35%"><bean:message key='transfer.from'/></td>
-						<td class="headerField">${fromMember.username} - ${fromMember.name}</td>
+						<td class="headerField">"<c:out value="${fromMember.username}"/>" - "<c:out value="${fromMember.name}</td>"/>"
 					</tr>
 				</c:if>
 				<tr>
 					<td class="headerLabel" width="35%"><bean:message key='transfer.to'/></td>
 					<td class="headerField">
 						<c:choose><c:when test="${not empty toMember}">
-							${toMember.username} - ${toMember.name}
+							"<c:out value="${toMember.username}"/>" - "<c:out value="${toMember.name}"/>"
 						</c:when><c:otherwise>
 							<bean:message key='global.system'/>
 						</c:otherwise></c:choose>
@@ -122,7 +122,7 @@
 				<c:if test="${not empty payment.description}">
 					<tr>
 						<td class="headerLabel" valign="top"><bean:message key='transfer.description'/></td>
-						<td class="headerField"><cyclos:escapeHTML>${payment.description}</cyclos:escapeHTML></td>
+						<td class="headerField"><cyclos:escapeHTML>"<c:out value="${payment.description}"/>"</cyclos:escapeHTML></td>
 					</tr>
 				</c:if>
 				

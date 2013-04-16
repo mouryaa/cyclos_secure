@@ -62,12 +62,12 @@
 					<td class="label"><bean:message key="member.username"/></td>
 					<td>
 						<html:hidden styleId="memberId" property="externalTransfer(member)"/>
-						<input id="memberUsername" class="full InputBoxDisabled" disabled="disabled" value="${externalTransfer.member.username}">
+						<input id="memberUsername" class="full InputBoxDisabled" disabled="disabled" "c:out value="${externalTransfer.member.username}"/>">
 						<div id="membersByUsername" class="autoComplete"></div>
 					</td>
 					<td class="label"><bean:message key="member.memberName"/></td>
 					<td>
-						<input id="memberName" class="full InputBoxDisabled" disabled="disabled" value="${externalTransfer.member.name}">
+						<input id="memberName" class="full InputBoxDisabled" disabled="disabled" "c:out value="${externalTransfer.member.name}"/>">
 						<div id="membersByName" class="autoComplete"></div>
 					</td>
 				</tr>

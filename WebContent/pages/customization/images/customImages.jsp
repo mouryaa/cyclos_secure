@@ -21,7 +21,7 @@
 <cyclos:script src="/pages/customization/images/customImages.js" />
 <script>
 	var removeConfirmationMessage = "<cyclos:escapeJS><bean:message key="customImage.removeConfirmation"/></cyclos:escapeJS>";
-	var nature = "${nature}";
+	var nature = "<c:out value="${nature}"/>";
 </script>
 <table class="defaultTableContent" cellspacing="0" cellpadding="0">
     <tr>
@@ -41,7 +41,7 @@
                 </tr>
                 <c:forEach var="image" items="${images}">
 	                <tr class="<t:toggle>ClassColor1|ClassColor2</t:toggle>">
-	                	<td align="center">${image.name}</td>
+	                	<td align="center">"<c:out value="${image.name}"/>"</td>
 	                	<td align="center"><cyclos:format bytes="${image.imageSize}"/></td>
 	                    <td align="center"><a class="showImage" imageId="${image.id}"><cyclos:customImage type="${fn:toLowerCase(nature)}" name="${image.name}" thumbnail="true" /></a></td>
 						<c:if test="${cyclos:granted(AdminSystemPermission.CUSTOM_IMAGES_MANAGE)}">

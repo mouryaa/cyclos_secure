@@ -76,7 +76,7 @@
 				     	<cyclos:cell className="label"><bean:message key="certification.buyerUsername"/></cyclos:cell>
 						<cyclos:cell>
 							<html:hidden styleId="buyerId" property="certification(buyer)"/>
-							<div style="white-space: nowrap"><input id="buyerUsername" class="full InputBoxDisabled ${requiredClassName}" value="${certification.buyer.username}" readonly></div>
+							<div style="white-space: nowrap"><input id="buyerUsername" class="full InputBoxDisabled ${requiredClassName}" "<c:out value="${certification.buyer.username}"/>" readonly></div>
 							<div id="buyersByUsername" class="autoComplete"></div>						
 						</cyclos:cell>
 						<cyclos:cell className="label"><bean:message key="certification.buyerName"/></cyclos:cell>
@@ -89,7 +89,7 @@
 			     	<c:if test="${not isIssuer}">
 				     	<cyclos:cell className="label"><bean:message key="certification.issuerUsername"/></cyclos:cell>
 						<cyclos:cell>
-							<input id="issuerUsername" class="full InputBoxDisabled" value="${certification.issuer.username}" readonly>
+							<input id="issuerUsername" class="full InputBoxDisabled" "<c:out value="${certification.issuer.username}"/>" readonly>
 						</cyclos:cell>
 						<cyclos:cell className="label"><bean:message key="certification.issuerName"/></cyclos:cell>
 						<cyclos:cell>

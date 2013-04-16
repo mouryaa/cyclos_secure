@@ -23,11 +23,11 @@
             <table class="defaultTable">
                 <tr>
                     <td width="25%" class="label"><bean:message key="member.username"/></td>
-                    <td><input type="text" id="usernameText" class="medium InputBoxDisabled" readonly="true" value="${contact.username}"/></td>
+                    <td><input type="text" id="usernameText" class="medium InputBoxDisabled" readonly="true" "<c:out value="${contact.username}"/></td>
                 </tr>
                 <tr>
                     <td class="label"><bean:message key="member.name"/></td>
-                    <td><input type="text" id="nameText" class="full InputBoxDisabled" readonly="true" value="${contact.name}"/></td>
+                    <td><input type="text" id="nameText" class="full InputBoxDisabled" readonly="true" "<c:out value="${contact.name}"/></td>
                 </tr>
                 <tr>
                     <td class="label" valign="top"><bean:message key="contact.notes"/></td>

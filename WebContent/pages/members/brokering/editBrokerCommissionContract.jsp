@@ -43,13 +43,13 @@
             	<c:if test="${not byBroker}">
 					<tr>
 						<td class="label" width="30%"><bean:message key='brokerCommissionContract.broker'/></td>
-						<td><input id="broker" class="InputBoxDisabled large" value="${brokerCommissionContract.brokering.broker.name}" readonly="readonly"/></td>
+						<td><input id="broker" class="InputBoxDisabled large" "<c:out value="${brokerCommissionContract.brokering.broker.name}"/>" readonly="readonly"/></td>
 					</tr>
 				</c:if>
 				<c:if test="${byAdmin or byBroker}">
 					<tr>
 						<td class="label"><bean:message key='brokerCommissionContract.member'/></td>
-						<td><input id="member" class="InputBoxDisabled large" value="${brokerCommissionContract.brokering.brokered.name}" readonly="readonly"/></td>
+						<td><input id="member" class="InputBoxDisabled large" "<c:out value="${brokerCommissionContract.brokering.brokered.name}"/>" readonly="readonly"/></td>
 					</tr>
 				</c:if>
 				<tr>

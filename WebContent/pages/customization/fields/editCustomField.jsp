@@ -46,7 +46,7 @@ var moveValueConfirmation = "<cyclos:escapeJS><bean:message key="customField.mov
 var types = [];
 <c:forEach var="type" items="${types}">
 	types.push({
-		name: "${type}", 
+		name: "<c:out value="${type}"/>", 
 		description: "<cyclos:escapeJS><bean:message key="customField.type.${type}"/></cyclos:escapeJS>",
 		defaultSelected: ${field.type == type},
 		controls: [
@@ -65,11 +65,11 @@ var controls = [];
 	});
 </c:forEach>
 var selectedControl = "${field.control}";
-var nature = "${nature}";
+var nature = "<c:out value="${nature}"/>";
 </script>
 
 <ssl:form method="post" action="${formAction}">
-<input type="hidden" name="nature" value="${nature}" />
+<input type="hidden" name="nature" c:out value="${nature}" />
 <html:hidden property="fieldId" />
 <html:hidden property="field(id)" />
 <html:hidden property="field(transferType)"/>
@@ -460,7 +460,7 @@ var nature = "${nature}";
 	    </tr>
 	    <tr>
 	        <td colspan="2" align="left" class="tdContentTableForms">
-	        	<input type="hidden" name="nature" value="${nature}">
+	        	<input type="hidden" name="nature" c:out value="${nature}">
         		<input type="hidden" name="possibleValue(id)">
         		<input type="hidden" name="possibleValue(parent)" id="parentValueIdHidden">
         		<input type="hidden" name="possibleValue(field)" value="${field.id}">
