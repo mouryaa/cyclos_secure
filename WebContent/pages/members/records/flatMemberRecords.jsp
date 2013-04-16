@@ -63,12 +63,12 @@
 					            <table style="width:100%" cellspacing="0" cellpadding="0">
 					                <tr>
 					                    <td class="tdHeaderContents" width="25%"><bean:message key="memberRecord.by"/></td>
-				   						<td>${memberRecord.by.name} (<cyclos:format dateTime="${memberRecord.date}"/>)</td>
+				   						<td>"<c:out value="${memberRecord.by.name}"/>" (<cyclos:format dateTime="${memberRecord.date}"/>)</td>
 							   		</tr>
 							   		<c:if test="${not empty memberRecord.modifiedBy}">
 								   		<tr>
 								   			<td class="tdHeaderContents"><bean:message key="memberRecord.modifiedBy"/></td>
-								   			<td>${memberRecord.modifiedBy.name} (<cyclos:format dateTime="${memberRecord.lastModified}"/>)</td>
+								   			<td>"<c:out value="${memberRecord.modifiedBy.name}"/>" (<cyclos:format dateTime="${memberRecord.lastModified}"/>)</td>
 										</tr>
 									</c:if>
 									<c:forEach var="field" items="${customFields}">

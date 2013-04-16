@@ -57,12 +57,12 @@
 					<td class="label"><bean:message key="member.username"/></td>
 					<td>
 						<html:hidden styleId="memberId" property="query(member)"/>
-						<input id="memberUsername" class="full" value="${query.member.username}">
+						<input id="memberUsername" class="full" <c:out value="${query.member.username}"</c:out>>
 						<div id="membersByUsername" class="autoComplete"></div>
 					</td>
 					<td class="label"><bean:message key="member.memberName"/></td>
 					<td>
-						<input id="memberName" class="full" value="${query.member.name}">
+						<input id="memberName" class="full" <c:out value="${query.member.name}"</c:out>>
 						<div id="membersByName" class="autoComplete"></div>
 					</td>
 				</tr>

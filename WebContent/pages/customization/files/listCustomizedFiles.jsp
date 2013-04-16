@@ -8,7 +8,7 @@
 <cyclos:script src="/pages/customization/files/listCustomizedFiles.js" />
 <script>
 	var removeConfirmationMessage = "<cyclos:escapeJS><bean:message key="customizedFile.removeConfirmation"/></cyclos:escapeJS>";
-	var type = "${type}";
+	var type = "<c:out value="${type}"/>";
 </script>
 
 <c:choose>
@@ -49,7 +49,7 @@
                 		<c:set var="fileNameClass" value="class='conflict'"/>
                 	</c:if>
 	                <tr class="<t:toggle>ClassColor1|ClassColor2</t:toggle>">
-	                	<td><span ${fileNameClass}>${file.name}</span></td>
+	                	<td><span ${fileNameClass}>"<c:out value="${file.name}"/>"</span></td>
 	                    <td align="center" nowrap="nowrap">
 	                    	<c:if test="${type != 'STYLE' && type != 'APPLICATION_PAGE'}">
 	                    		<img class="preview" src="<c:url value="/pages/images/preview.gif"/>" fileName="<cyclos:escapeHTML>${file.name}</cyclos:escapeHTML>" border="0">

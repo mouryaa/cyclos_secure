@@ -50,14 +50,14 @@ var emptyPassword = ${empty serviceClient.password};
 					<td width="20%">
 						<div style="position:relative; width:96%">
 							<html:hidden styleId="memberId" property="serviceClient(member)" />
-							<input id="memberUsername" class="full InputBoxDisabled" disabled="disabled" value="${serviceClient.member.username}">
+							<input id="memberUsername" class="full InputBoxDisabled" disabled="disabled" <c:out value="${serviceClient.member.username}"/> >
 							<div id="membersByUsername" class="autoComplete"></div>
 						</div>
 					</td>
 					<td class="label" width="10%" nowrap="nowrap"><bean:message key='member.name'/></td>
 					<td>
 						<div style="position:relative; width:96%">
-							<input id="memberName" class="full InputBoxDisabled" disabled="disabled" value="${serviceClient.member.name}">
+							<input id="memberName" class="full InputBoxDisabled" disabled="disabled" <c:out value="${serviceClient.member.name}"/> >
 							<div id="membersByName" class="autoComplete"></div>
 						</div>
 					</td>

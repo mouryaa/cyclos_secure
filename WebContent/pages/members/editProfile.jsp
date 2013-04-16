@@ -145,7 +145,7 @@
 				        	<table class="nested" width="100%">
 				        		<tr>
 				        			<td width="90%" style="padding:0px;">
-							            <input type="text" id="brokerText" value="${member.broker.name}" readonly="true" class="full InputBoxDisabled"/>
+							            <input type="text" id="brokerText" <c:out value="${member.broker.name}"/> readonly="true" class="full InputBoxDisabled"/>
 							        </td>
 							        <td nowrap="nowrap">
 							        	&nbsp;

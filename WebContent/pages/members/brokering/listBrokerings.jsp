@@ -110,7 +110,7 @@
 			                <c:if test="${canChangeBroker}">
 		                    	<td align="center" nowrap="nowrap">
 			                    	<script>
-			                    		brokered["${member.id}"] = {username:'<cyclos:escapeJS>${member.username}</cyclos:escapeJS>', name:'<cyclos:escapeJS>${member.name}</cyclos:escapeJS>'};
+			                    		brokered["${member.id}"] = {"<c:out value="username:'<cyclos:escapeJS>${member.username}</cyclos:escapeJS>'"/>", "<c:out value="name:'<cyclos:escapeJS>${member.name}</cyclos:escapeJS>'"/>"};
 			                    	</script>
 			                    	<img class="remove" memberId="${member.id}" src="<c:url value="/pages/images/delete.gif"/>">
 			                    </td>

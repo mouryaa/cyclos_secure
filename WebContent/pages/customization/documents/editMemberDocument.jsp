@@ -45,7 +45,7 @@
 	                	<td class="label" valign="top"><bean:message key="document.currentFile"/></td>
 	                	<td>
 	                		<a id="currentFileLink" class="default" documentId="${document.id}">
-	                	    	<bean:message key="document.currentFileLink">
+	                	    	value= <bean:message key="document.currentFileLink">
 	                				<jsp:attribute name="arg0">${document.binaryFile.name}</jsp:attribute>
 	                				<jsp:attribute name="arg1"><cyclos:format bytes="${document.binaryFile.size}"/></jsp:attribute>
 	                		   </bean:message>

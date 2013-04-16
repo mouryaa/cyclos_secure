@@ -67,14 +67,14 @@
 		                    	<c:choose><c:when test="${nature == 'OPERATOR' && isAdmin}">
 		                    		<c:set var="member" value="${user.operator.member}"/>		                    	
 			                    	<cyclos:profile elementId="${member.id}" pattern="username"/>
-			                    	/ ${user.username}
+			                    	 "<c:out value="${user.username}"/>"
 		                    	</c:when><c:otherwise>
 			                    	<cyclos:profile elementId="${user.id}" pattern="username"/>
 		                    	</c:otherwise></c:choose>
 		                    </td>
 		                    <td align="left" valign="top">
 		                    	<c:choose><c:when test="${nature == 'OPERATOR' && isAdmin}">
-			                    	${user.element.name}
+			                    	"<c:out value="${user.element.name}"/>"
 		                    	</c:when><c:otherwise>
 			                    	<cyclos:profile elementId="${user.id}" pattern="name"/>
 		                    	</c:otherwise></c:choose>

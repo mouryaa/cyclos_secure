@@ -65,7 +65,7 @@
 		            	<td width="25%" class="label"><bean:message key="paymentObligation.sellerUsername" /></td>
 		            	<td>
 							<html:hidden styleId="sellerId" property="paymentObligation(seller)"/>
-							<div style="white-space: nowrap;"><input id="sellerUsername" class="full InputBoxDisabled ${requiredClassName}" value="${paymentObligation.seller.username}" readonly></div>
+							<div style="white-space: nowrap;"><input id="sellerUsername" class="full InputBoxDisabled ${requiredClassName}" <c:out value="${paymentObligation.seller.username}"/> readonly></div>
 							<div id="sellersByUsername" class="autoComplete"></div>
 		            	</td>
 		            	<td width="25%" class="label"><bean:message key="paymentObligation.sellerName" /></td>
@@ -79,7 +79,7 @@
 	           		<tr>
 		            	<td width="25%" class="label"><bean:message key="paymentObligation.buyerUsername" /></td>
 		            	<td>
-							<input id="buyerUsername" class="full InputBoxDisabled" value="${paymentObligation.buyer.username}" readonly>
+							<input id="buyerUsername" class="full InputBoxDisabled" <c:out value="${paymentObligation.buyer.username}"/> readonly>
 		            	</td>
 		            	<td width="25%" class="label"><bean:message key="paymentObligation.buyerName" /></td>
 		            	<td>

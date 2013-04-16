@@ -45,7 +45,7 @@
 						<td class="label" width="20%"><bean:message key="customizedFile.name"/></td>
 						<td>
 							<html:hidden property="file(name)"/>
-							<input id="fileName" value="${file.name}" class="full InputBoxDisabled" readonly="readonly"/>
+							<input id="fileName" "<c:out value="${file.name}"/>" class="full InputBoxDisabled" readonly="readonly"/>
 						</td>
 					</tr>
 				</c:otherwise></c:choose>

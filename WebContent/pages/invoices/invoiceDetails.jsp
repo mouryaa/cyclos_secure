@@ -164,7 +164,7 @@
 					<c:when test="${empty invoice.payments}">
 						<tr>
 							<td class="headerLabel"><bean:message key='invoice.amount'/></td>
-							<td class="headerField">${amount}</td>
+							<td class="headerField">"<c:out value="${amount}"/>"</td>
 						</tr>
 					</c:when>
 					<c:when test="${fn:length(invoice.payments) == 1}">

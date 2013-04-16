@@ -31,12 +31,12 @@
 	            	</tr>
 	            	<tr>
 	            		<td class="headerLabel"><bean:message key="reference.from"/></td>
-	            		<td class="headerField">${reference.from.name}</td>
+	            		<td class="headerField">"<c:out value="${reference.from.name}"/>"</td>
 	            	</tr>
 	            </c:if>
             	<tr>
             		<td width="25%" class="headerLabel"><bean:message key="reference.to"/></td>
-            		<td class="headerField">${reference.to.name}</td>
+            		<td class="headerField">"<c:out value="${reference.to.name}"/>"</td>
             	</tr>
                 <tr>
                     <td class="headerLabel" width="25%"><bean:message key="reference.level"/></td>

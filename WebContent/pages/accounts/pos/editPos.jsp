@@ -70,12 +70,12 @@ var actionAssign = "<cyclos:escapeJS><bean:message key="pos.actions.assign"/></c
 					            	<c:if test="${hasMemberPos}">
 					            	
 					            		<tr>
-						            		<td class="label" valign="top"><bean:message key="member.username"/></td>
+						            		<td class="label" valign="top"> value= <bean:message key="member.username"/></td>
 						            		<td><input type="text" value="${memberLogin}" id="memberLogin" readonly="readonly" class="large InputBoxDisabled"/></td>
 						            	</tr>
 						            	<tr>
 						            		<td class="label" valign="top"><bean:message key="member.name"/></td>
-						            		<td><input type="text" value="${userName}" id="userName" readonly="readonly" class="large InputBoxDisabled"/></td>
+						            		<td><input type="text" <c:out value="${userName}"/> id="userName" readonly="readonly" class="large InputBoxDisabled"/></td>
 						            	</tr>
 						            	<tr>
 						            		<td class="label" valign="top"><bean:message key="memberPos.name"/></td>
@@ -191,13 +191,13 @@ var actionAssign = "<cyclos:escapeJS><bean:message key="pos.actions.assign"/></c
 								        	<cyclos:cell className="label"><bean:message key="member.username"/></cyclos:cell>
 											<cyclos:cell>
 												<html:hidden styleId="memberId" property="pos(memberPos.member)"/>
-												<input id="memberUsername" class="full" value="${memberPos.member.username}">
+												<input id="memberUsername" class="full" <c:out value="${memberPos.member.username}"/> >
 												<div id="membersByUsername" class="autoComplete"></div>
 											</cyclos:cell>
 										
 											<cyclos:cell className="label"><bean:message key="member.memberName"/></cyclos:cell>
 											<cyclos:cell>
-												<input id="memberName" class="full" value="${memberPos.member.name}">
+												<input id="memberName" class="full" <c:out value="${memberPos.member.name}"/> >
 												<div id="membersByName" class="autoComplete"></div>
 											</cyclos:cell>
 								        </tr>						       

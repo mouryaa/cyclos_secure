@@ -11,7 +11,7 @@
 		var chargeTypes = [];
 		<c:forEach var="type" items="${chargeTypes}">
 			<c:set var="label"><cyclos:escapeJS><bean:message key="transactionFee.chargeType.${type}"/></cyclos:escapeJS></c:set>
-			chargeTypes.push({name: '${type}', label: '${label}'});
+			chargeTypes.push({named: '${type}', label: '${label}'});
 		</c:forEach>
 	</script>
 </c:if>
@@ -73,14 +73,14 @@
 							<td class="label"><bean:message key='transactionFee.fromFixedMember.username'/></td>
 							<td>
 								<html:hidden styleId="fromFixedMemberId" property="transactionFee(fromFixedMember)"/>
-								<input id="fromFixedMemberUsername" class="full" value="${transactionFee.fromFixedMember.username}">
+								<input id="fromFixedMemberUsername" class="full" c:out value="${transactionFee.fromFixedMember.username}">
 								<div id="fromFixedMembersByUsername" class="autoComplete"></div>
 							</td>
 						</tr>
 						<tr class="fromFixedMember" style="display:none">
 							<td class="label"><bean:message key="transactionFee.fromFixedMember.name"/></td>
 							<td>
-								<input id="fromFixedMemberName" class="full" value="${transactionFee.fromFixedMember.name}">
+								<input id="fromFixedMemberName" class="full" c:out value="${transactionFee.fromFixedMember.name}">
 								<div id="fromFixedMembersByName" class="autoComplete"></div>
 							</td>
 						</tr>
@@ -89,13 +89,13 @@
 							<td class="label"><bean:message key='transactionFee.fromFixedMember.username'/></td>
 							<td>
 								<html:hidden property="transactionFee(fromFixedMember)" />
-								<input readonly="readonly" id="fromFixedMemberText" class="full InputBoxDisabled" value="${transactionFee.fromFixedMember.username}" >
+								<input readonly="readonly" id="fromFixedMemberText" class="full InputBoxDisabled" c:out value="${transactionFee.fromFixedMember.username}">
 							</td>
 						</tr>
 						<tr class="fromFixedMember" style="display:none">
 							<td class="label"><bean:message key='transactionFee.fromFixedMember.name'/></td>
 							<td>
-								<input readonly="readonly" id="fromFixedMemberText" class="full InputBoxDisabled" value="${transactionFee.fromFixedMember.name}" >
+								<input readonly="readonly" id="fromFixedMemberText" class="full InputBoxDisabled" c:out value="${transactionFee.fromFixedMember.name}">
 							</td>
 						</tr>
 					</c:otherwise></c:choose>
@@ -119,14 +119,14 @@
 							<td class="label"><bean:message key='transactionFee.toFixedMember.username'/></td>
 							<td>
 								<html:hidden styleId="toFixedMemberId" property="transactionFee(toFixedMember)"/>
-								<input id="toFixedMemberUsername" class="full" value="${transactionFee.toFixedMember.username}">
+								<input id="toFixedMemberUsername" class="full" <c:out value="${transactionFee.toFixedMember.username}"/> >
 								<div id="toFixedMembersByUsername" class="autoComplete"></div>
 							</td>
 						</tr>
 						<tr class="toFixedMember" style="display:none">
 							<td class="label"><bean:message key="transactionFee.toFixedMember.name"/></td>
 							<td>
-								<input id="toFixedMemberName" class="full" value="${transactionFee.toFixedMember.name}">
+								<input id="toFixedMemberName" class="full" c:out value="${transactionFee.toFixedMember.name}">
 								<div id="toFixedMembersByName" class="autoComplete"></div>
 							</td>
 						</tr>
@@ -135,13 +135,13 @@
 							<td class="label"><bean:message key='transactionFee.toFixedMember.username'/></td>
 							<td>
 								<html:hidden property="transactionFee(toFixedMember)" />
-								<input readonly="readonly" id="toFixedMemberText" class="full InputBoxDisabled" value="${transactionFee.toFixedMember.username}" >
+								<input readonly="readonly" id="toFixedMemberText" class="full InputBoxDisabled" c:out value="${transactionFee.toFixedMember.username}">
 							</td>
 						</tr>
 						<tr class="toFixedMember" style="display:none">
 							<td class="label"><bean:message key='transactionFee.toFixedMember.name'/></td>
 							<td>
-								<input readonly="readonly" id="toFixedMemberText" class="full InputBoxDisabled" value="${transactionFee.toFixedMember.name}" >
+								<input readonly="readonly" id="toFixedMemberText" class="full InputBoxDisabled" c:out value="${transactionFee.toFixedMember.name}">
 							</td>
 						</tr>
 					</c:otherwise></c:choose>

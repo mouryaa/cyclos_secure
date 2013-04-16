@@ -89,7 +89,7 @@
 						<td class="label"><bean:message key="transferType.fixedDestinationMember.username"/></td>
 						<td>
 							<html:hidden styleId="fixedDestinationMemberId" property="transferType(fixedDestinationMember)"/>
-							<input id="memberUsername" readonly="readonly" class="InputBoxDisabled full" value="${transferType.fixedDestinationMember.username}">
+							<input id="memberUsername" readonly="readonly" class="InputBoxDisabled full" <c:out value="${transferType.fixedDestinationMember.username}"/> />
 							<div id="membersByUsername" class="autoComplete"></div>
 						</td>
 					</tr>

@@ -9,7 +9,7 @@
 <cyclos:script src="/pages/customization/fields/listCustomFields.js" />
 <script>
 	var removeConfirmationMessage = "<cyclos:escapeJS><bean:message key="customField.removeConfirmation"/></cyclos:escapeJS>";
-	var nature = "${nature}";
+	var nature = "<c:out value="${nature}"/>";
 </script>
 
 <c:choose>

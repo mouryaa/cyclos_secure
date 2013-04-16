@@ -31,14 +31,14 @@
 				   				<table class="defaultTable">
 				   					<tr>
 				   						<td width="25%" class="label"><bean:message key="memberRecord.by"/></td>
-				   						<td>${memberRecord.by.name}</td>
+				   						<td>"<c:out value="${memberRecord.by.name}"/>"</td>
 				   						<td class="label"><bean:message key="memberRecord.date"/></td>
 				   						<td><cyclos:format dateTime="${memberRecord.date}"/></td>
 				   					</tr>
 				   					<c:if test="${not empty memberRecord.modifiedBy}">
 					   					<tr>
 					   						<td class="label"><bean:message key="memberRecord.modifiedBy"/></td>
-					   						<td>${memberRecord.modifiedBy.name}</td>
+					   						<td>"<c:out value="${memberRecord.modifiedBy.name}"/>"</td>
 					   						<td class="label"><bean:message key="memberRecord.lastModified"/></td>
 					   						<td><cyclos:format dateTime="${memberRecord.lastModified}"/></td>
 										</tr>

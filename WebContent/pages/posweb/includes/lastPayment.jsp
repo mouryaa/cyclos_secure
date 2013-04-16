@@ -61,14 +61,14 @@
 					<td align="right" nowrap="nowrap"><b><bean:message key="transfer.from" /></b></td>
 					<td>
 						<c:set var="from" value="${lastPayment.from.owner}" />
-						${from.username} - ${from.name}
+						"<c:out value="${from.username}"/>" - "<c:out value="${from.name}"/>"
 					</td>
 				</tr>
 				<tr>
 					<td align="right" nowrap="nowrap"><b><bean:message key="transfer.to" /></b></td>
 					<td>
 						<c:set var="to" value="${lastPayment.to.owner}" />
-						${to.username} - ${to.name}
+						"<c:out value="${to.username}"/>" - "<c:out value="${to.name}"/>"
 					</td>
 				</tr>
 				<tr>
@@ -113,7 +113,7 @@
 				<c:if test="${showDescription}">
 					<tr>
 						<td align="right" nowrap="nowrap"><b><bean:message key="transfer.description" /></b></td>
-						<td><cyclos:escapeHTML>${lastPayment.description}</cyclos:escapeHTML></td>
+						<td><cyclos:escapeHTML>"<c:out value="${lastPayment.description}"/>"</cyclos:escapeHTML></td>
 					</tr>
 				</c:if>
 			</table>
