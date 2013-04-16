@@ -51,7 +51,7 @@
 					<c:set var="rowCount" value="${3 + (isAdmin ? 2 : 0) + customFieldCount}"/>
 					<tr>
 						<td width="25%" class="headerLabel"><bean:message key="member.username"/></td>
-						<td width="55%" class="headerField">${member.username}</td>
+						<td width="55%" class="headerField"><c: out value ="${member.username}"/></td>
 						<td width="20%" rowspan="${rowCount}" valign="top" align="right">
 							<cyclos:images images="${images}" editable="${editable}" />
 						</td>
@@ -59,7 +59,7 @@
 				</c:otherwise></c:choose>
 				<tr>
 					<td class="headerLabel"><bean:message key="member.name"/></td>
-					<td class="headerField">${member.name}</td>
+					<td class="headerField"><c: out value = "${member.name}"/></td>
 				</tr>
 				<c:if test="${isAdmin}">
 					<tr>
@@ -89,7 +89,7 @@
 				<c:if test="${not empty member.email and not member.hideEmail}">
 					<tr>
 						<td class="headerLabel"><bean:message key="member.email"/></td>
-						<td class="headerField"><a class="default" href="mailto:${member.email}">${member.email}</a></td>
+						<td class="headerField"><a class="default" href="mailto:${member.email}"><c: out value = "${member.email}"/></a></td>
 					</tr>
 				</c:if>
 				

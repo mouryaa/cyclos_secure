@@ -57,7 +57,7 @@
 					<td class="label tdHeaderContents"><bean:message key="transfer.from"/></td>
             		<td>
             			<c:choose><c:when test="${payment.fromSystem}">
-	            			${payment.from.ownerName}
+	            			<c: out value = "${payment.from.ownerName}"/>
             			</c:when><c:otherwise>
             				<cyclos:profile elementId="${payment.from.owner.id}"/>
             			</c:otherwise></c:choose>
@@ -67,7 +67,7 @@
 					<td class="label tdHeaderContents"><bean:message key="transfer.to"/></td>
             		<td>
             			<c:choose><c:when test="${payment.toSystem}">
-	            			${payment.to.ownerName}
+	            			<c: out value = "${payment.to.ownerName}"/>
             			</c:when><c:otherwise>
             				<cyclos:profile elementId="${payment.to.owner.id}"/>
             			</c:otherwise></c:choose>
@@ -120,7 +120,7 @@
 			    </c:forEach>
             	<tr>
 					<td class="label tdHeaderContents" valign="top"><bean:message key='transfer.description'/></td>
-            		<td><cyclos:escapeHTML>${payment.description}</cyclos:escapeHTML></td>
+            		<td><cyclos:escapeHTML><c out value = "${payment.description}"/></cyclos:escapeHTML></td>
             	</tr>
             	<c:if test="${!showActions && (canBlock || canUnblock || canCancel)}">
 	            	<tr id="trActions">

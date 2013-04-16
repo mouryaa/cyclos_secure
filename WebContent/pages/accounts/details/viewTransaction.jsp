@@ -65,7 +65,7 @@
 					<td class="label tdHeaderContents"><bean:message key="transfer.from"/></td>
             		<td>
             			<c:set var="from" value="${transfer.actualFrom}" />
-            			<c:choose><c:when test="${transfer.actuallyFromSystem}">
+            			<c:choose><c:when test="<c: out value = "${transfer.actuallyFromSystem}"/>">
 	            			${from.ownerName}
             			</c:when><c:otherwise>
             				<cyclos:profile elementId="${from.owner.id}"/>
@@ -76,7 +76,7 @@
 					<td class="label tdHeaderContents"><bean:message key="transfer.to"/></td>
             		<td>
             			<c:set var="to" value="${transfer.actualTo}" />
-            			<c:choose><c:when test="${transfer.actuallyToSystem}">
+            			<c:choose><c:when test="<c: out value = "${transfer.actuallyToSystem}"/>">
 	            			${to.ownerName}
             			</c:when><c:otherwise>
             				<cyclos:profile elementId="${to.owner.id}"/>
@@ -200,7 +200,7 @@
 	            <c:if test="${not empty transfer.description}">
 	            	<tr>
 						<td class="label tdHeaderContents" valign="top"><bean:message key='transfer.description'/></td>
-	            		<td><cyclos:escapeHTML>${transfer.description}</cyclos:escapeHTML></td>
+	            		<td><cyclos:escapeHTML>"<c: out value = "${transfer.description}"/>"</cyclos:escapeHTML></td>
 	            	</tr>
             	</c:if>
 	            <c:if test="${not empty guarantee}">
@@ -382,7 +382,7 @@
 	            		<td>
 	            			<c:set var="from" value="${parent.actualFrom}" />
 	            			<c:choose><c:when test="${parent.actuallyFromSystem}">
-		            			${from.ownerName}
+		            			<c out value = "${from.ownerName}"/>
 	            			</c:when><c:otherwise>
 	            				<cyclos:profile elementId="${from.owner.id}"/>
 	            			</c:otherwise></c:choose>
@@ -393,7 +393,7 @@
 	            		<td>
 	            			<c:set var="to" value="${parent.actualTo}" />
 	            			<c:choose><c:when test="${parent.actuallyToSystem}">
-		            			${to.ownerName}
+		            			<c: out value = "${to.ownerName}"/>
 	            			</c:when><c:otherwise>
 	            				<cyclos:profile elementId="${to.owner.id}"/>
 	            			</c:otherwise></c:choose>
@@ -421,7 +421,7 @@
 				    </c:forEach>
 	            	<tr>
 						<td class="label tdHeaderContents" valign="top"><bean:message key='transfer.description'/></td>
-	            		<td><cyclos:escapeHTML>${parent.description}</cyclos:escapeHTML></td>
+	            		<td><cyclos:escapeHTML><c:out value = "${parent.description}"/></cyclos:escapeHTML></td>
 	            	</tr>
 	            </table>
 	        </td>
